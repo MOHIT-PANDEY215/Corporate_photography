@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background: #F5F5F5;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #c0c0c0;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #a0a0a0;
+}
+
+::-moz-scrollbar{
+    width: 10px;
+}
+::-moz-scrollbar-thumb{
+    background-color: #c0c0c0;
+    border-radius: 5px;
+}
+::-moz-scrollbar-thumb:hover{
+    background-color: #a0a0a0;
+}
+
+nav{
+    background: #585252;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding-inline: 2rem;
+    text-transform: uppercase;
+}
+
+nav ul{
+    display: flex;
+    gap: 2rem;
+    font-family: 'Rubik';
+font-style: italic;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+
+color: #FFFFFF;
+}
+ img{
+    max-width: 100%;
+    height: 80%;
+    aspect-ratio: 3/2;
+}
+
+input,select{
+    border: none;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.underline{
+    margin-bottom: 4rem;
+    border-bottom: 1px solid #DA8590;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sign{
+    padding: 1rem 2rem;
+    
+    background: #89B0A6;
+border-radius: 30px;
+font-family: 'Rubik';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+@media (max-width:1000px){
+    nav{
+        gap: 1rem;
+    }
+   
+}
+
+.main_container{
+    
+    background: url('../public/bg.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main{
+    min-width: 100vw;
+    min-height: 70vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.main h1{
+    margin: 0 4rem 1rem 0 ;
+    font-family: 'Italiana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 70px;
+}
+
+.banner_container{
+    display: flex;
+    padding: 2rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 49px 49px;
+    margin-bottom: 4rem;
+
+}
+
+.line{
+    border: 1px solid rgba(87, 17, 17, 0.36);
+    margin: 0 1rem;
+/* transform: rotate(90deg); */
+}
+
+.form_container,form{
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    background: #007D99;
+box-shadow: 0px 4px 9px -1px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+padding: 0.5rem;
+margin-bottom: 1.5rem;
+}
+
+.heading h2{
+    font-family: 'Raleway';
+font-style: italic;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin-bottom: 0.4rem;
+}
+.heading p{
+    font-family: 'Raleway';
+font-style: italic;
+font-weight: 600;
+font-size: 11px;
+line-height: 13px;
+
+color: #FFFFFF;
+}
+
+.form form{
+    padding: 3rem 1rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 9px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.input{
+    display: flex;
+}
+.input img{
+    min-width: 15%;
+}
+
+#dropdown option:disabled{
+display: none;
+}
+#dropdown:focus{
+    outline: none;
+}
+
+.form input{
+    width: 90%;
+    border-bottom: 0.25px solid #888080;
+    margin-bottom: 1rem;
+    padding: 0.2rem 0 0.8rem 0;
+}
+.form input::placeholder{
+    font-family: 'Quicksand';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+
+color: #888080;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form select{
+    background: #F5F5F5;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    color: #888080;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form button{
+    width: 100%;
+    background: #007D99;
+    font-family: 'Impact';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 33px;
+    color: #FFFFFF;
+    padding: 0.5rem;
+}
+
+
+@media (max-width:1140px){
+    .heading h2,.form input::placeholder{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:924px){
+    .banner_container{
+        flex-direction: column;
+    }
+    .line{
+        margin: 0px 1rem 2rem 1rem;
+    }
+    .input img{
+        min-width: 10%;
+    }
+}
+
+.carousel_container{
+    padding: 2rem;
+}
+
+.text h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #68A7AD;
+}
+
+.text p{
+    font-family: 'RocknRoll One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #4F5F66;
+}
+
+.invite_form{
+    margin-bottom: 4rem;
+    width: 80%;
+    margin-inline: auto;
+}
+.invite_text{
+    border: 1px solid #A5A5A5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.invite_form  h3{
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 34px;
+    color: #79DAE8;
+}
+
+.invite_form form input{
+    
+    background: #F5F5F5;
+    font-family: 'Rounded Mplus 1c';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #9F9F9F;
+    border-bottom: 1px solid #A5A5A5;
+    margin-bottom: 2rem;
+}
+
+.invite_button{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+}
+.invite_button button{
+    width: 40%;
+    padding: 1rem 2rem;
+}
+.cancel_button{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.28);
+    border-radius: 0px;
+    font-family: 'Rosario';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #9B9B9B;
+}
+
+.accept_button{
+    background: #007D99;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.28);
+    border-radius: 0px;
+    font-family: 'Rosario';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.help{
+    text-align: center;
+    margin-top: -2rem;
+    padding-bottom: 1rem;
+}
+
+.help h2{
+    font-family: 'Roboto';
+font-style: italic;
+font-weight: 600;
+font-size: 48px;
+line-height: 56px;
+text-align: center;
+
+color: #61BBC8;
+}
+
+.help p{
+    font-family: 'RocknRoll One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 35px;
+text-align: center;
+
+color: #4F5F66;
+}
+
+.cta_container{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-family: 'Advent Pro';
+    font-style: normal;
+    color: #000000;
+}
+
+.box h2{
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 35px;
+    text-align: center;
+}
+.box ul{
+    padding: 2rem;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 28px;
+}
+.box button{
+    padding: 2rem;
+    width: 100%;
+    background: #007D99;
+border-radius: 0px 0px 23px 23px;
+font-family: 'Advent Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 29px;
+line-height: 35px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+@media (max-width:720px){
+    .cta_container{
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
+
+.booking{
+    background: linear-gradient(180deg, #007D99 0%, #6E9397 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+.booking h2{
+    font-family: 'Ropa Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 51px;
+
+color: #FFFFFF;
+margin-bottom: 1rem;
+}
+
+.booking div{
+    width: 50%;
+    padding: .25rem;
+    background: #FFFFFF;
+    border-radius: 30.5px;
+}
+.booking button{
+    width: 100%;
+    padding: 1rem;
+    background: #007D99;
+border-radius: 30.5px;
+font-family: 'Rosario';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+footer{
+    background: #676767;
+    min-height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
