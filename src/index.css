@@ -256,8 +256,58 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .carousel_container{
+    position: relative;
     padding: 2rem;
+    overflow: hidden;
 }
+
+.text{
+    margin-bottom: 2rem;
+}
+
+.carousel{
+    display: flex;
+    gap: 3rem;
+    padding: 4rem;
+}
+
+.carousel-item {
+    flex: 0 0 calc(100% / 3); 
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .carousel-item img {
+    width: 80%; 
+    height: auto; 
+  }
+
+  .carousel-item.active {
+    margin-left: 2rem;
+    transform: scale(1.5); 
+    z-index: 1; 
+  }
+  
+  .carousel-controls {
+    position: absolute;
+    top: 100px;
+    left: 30%;
+    right: 30%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none; 
+    z-index: 100;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    pointer-events: auto; 
+    border: none;
+    border-radius: 100%;
+    background: transparent;
+    cursor: pointer;
+  }
 
 .text h2{
     font-family: 'Roboto';
