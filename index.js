@@ -66,9 +66,15 @@
         window.addEventListener('resize',()=>{
             if(mediaQuery.matches){
                 nav_i.classList.add('none')
+                body.style.overflow="visible"
+                dot.style.display="block"
+                cross.style.display="none"
             }
             else{
             nav_i.classList.remove('none')
+            body.style.overflow="hidden"
+                cross.style.display="block"
+                dot.style.display="none"
         }
     })
     if(mediaQuery.matches){
