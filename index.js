@@ -2,35 +2,35 @@
        document.addEventListener('DOMContentLoaded',()=>{
 
         
-    const lazyImages = document.querySelectorAll('.lazy');
+    // const lazyImages = document.querySelectorAll('.lazy');
 
-    const loadImage = (image) => {
-      image.setAttribute('src', image.getAttribute('data-src'));
+    // const loadImage = (image) => {
+    //   image.setAttribute('src', image.getAttribute('data-src'));
   
-      image.classList.remove('lazy');
-    };
+    //   image.classList.remove('lazy');
+    // };
   
-    // Define a function to handle the intersection observer
-    const handleIntersection = (entries, observer) => {
-      entries.forEach(entry => {
-        // If the image is in the viewport, load it
-        if (entry.isIntersecting) {
-          loadImage(entry.target);
-          observer.unobserve(entry.target);
-        }
-      });
-    };
+    // // Define a function to handle the intersection observer
+    // const handleIntersection = (entries, observer) => {
+    //   entries.forEach(entry => {
+    //     // If the image is in the viewport, load it
+    //     if (entry.isIntersecting) {
+    //       loadImage(entry.target);
+    //       observer.unobserve(entry.target);
+    //     }
+    //   });
+    // };
   
-    // Create an intersection observer
-    const observer = new IntersectionObserver(handleIntersection, {
-      rootMargin: '50px',
-      threshold: 0.5
-    });
+    // // Create an intersection observer
+    // const observer = new IntersectionObserver(handleIntersection, {
+    //   rootMargin: '50px',
+    //   threshold: 0.5
+    // });
   
-    // Observe each image with the "lazy" class
-    lazyImages.forEach(image => {
-      observer.observe(image);
-    });
+    // // Observe each image with the "lazy" class
+    // lazyImages.forEach(image => {
+    //   observer.observe(image);
+    // });
      
         let mediaQuery = window.matchMedia('(max-width: 924px)');
 
