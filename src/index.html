@@ -8,15 +8,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Italiana&family=Quicksand&family=Raleway&family=Roboto&family=RocknRoll+One&family=Rubik&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/dd794ad611.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <img src="../public/logo.svg" alt="">
-            </div>
+          
+                <img class="logo lazy" data-src="../public/logo.svg" alt="">
+          
             <div class="nav_items">
                 <ul>
                     <li>Home</li>
@@ -29,22 +32,28 @@
                     <li>Contact</li>
                 </ul>
             </div>
-            <div class="sign">Login/Signup</div>
+            <div class="dot_container">
+                <i class="fa-solid fa-ellipsis-vertical dot" style="color: #89b0a6;"></i>
+                <i class="fa-sharp fa-solid fa-circle-xmark cross" style="color: #89b0a6;"></i>
+            </div>
+            <div class="sign">
+                Login/Signup
+            </div>
         </nav>
     </header>
     <main>
         <!-- <div class="camera">
             <img src="../public/camera.svg" alt="">
         </div> -->
-        <div class="main_container">
+        <section class="main_container">
             <div class="main">
                 <h1>Corporate<br/> Photograhphy</h1>
             </div>
-        </div>
-        <div class="banner_container">
+        </section>
+        <section class="banner_container">
             <div class="banner">
                 <div class="image">
-                    <img src="../public/banner.svg" alt="">
+                    <img class="lazy" data-src="../public/banner.svg" alt="">
                 </div>
             </div>
             <div class="line"></div>
@@ -56,27 +65,27 @@
                 <div class="form">
                     <form>
                         <div class="input">
-                            <img src="../public/name_logo.svg" alt="">
+                            <img class="lazy" data-src="../public/name_logo.svg" alt="">
                             <input type="text" id="name" placeholder="Name" />
                         </div>
 
                         <div class="input">
-                            <img src="../public/contact_logo.svg" alt="">
+                            <img class="lazy" data-src="../public/contact_logo.svg" alt="">
                             <input type="number" id="contact" placeholder="Contact Number" />
                         </div>
                         
                         <div class="input">
-                            <img src="../public/mail_logo.svg" alt="">
+                            <img class="lazy" data-src="../public/mail_logo.svg" alt="">
                             <input type="email" id="email" placeholder="Mail Id" />
                         </div>
                         
                         <div class="input">
-                            <img src="../public/wed_date_logo.svg" alt="">
+                            <img class="lazy" data-src="../public/wed_date_logo.svg" alt="">
                             <input type="number" id="date" placeholder="Wedding date" />
                         </div>
                         
                         <div class="input">
-                            <img src="../public/no_days.svg" alt="">
+                            <img class="lazy" data-src="../public/no_days.svg" alt="">
                             <input type="number" id="num_days" placeholder="No. of Days" />
                         </div>
 
@@ -92,9 +101,9 @@
                         <button>Submit</button>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="carousel_container underline">
+        <section class="carousel_container underline">
             <div class="text">
                 <h2>Introducing packages</h2>
                 <p>Let’s have a look on the package details (Prices are incl. GST)</p>
@@ -102,31 +111,31 @@
             <div class="carousel">
                 <div class="carousel-item">
 
-                    <img src="../public/carousel_3.svg" alt="">
+                    <img class="lazy" data-src="../public/carousel_3.svg" alt="">
                 </div>
                 <div class="carousel-item">
 
-                    <img src="../public/carousel_1.svg" alt="">
+                    <img class="lazy" data-src="../public/carousel_1.svg" alt="">
                 </div>
                 <div class="carousel-item">
 
-                    <img src="../public/carousel_2.svg" alt="">
+                    <img class="lazy" data-src="../public/carousel_2.svg" alt="">
                 </div>
                 <div class="carousel-item">
                     
-                    <img src="../public/carousel_3.svg" alt="">
+                    <img class="lazy" data-src="../public/carousel_3.svg" alt="">
                 </div>
                 <div class="carousel-item">
 
-                    <img src="../public/carousel_2.svg" alt="">
+                    <img class="lazy" data-src="../public/carousel_2.svg" alt="">
                 </div>
             </div>
             <div class="carousel-controls">
-                <button class="prev-btn"><img src="../public/prev.svg" alt=""></button>
-                <button class="next-btn"><img src="../public/next.svg" alt=""></button>
+                <button class="prev-btn"><img class="lazy" data-src="../public/prev.svg" alt=""></button>
+                <button class="next-btn"><img class="lazy" data-src="../public/next.svg" alt=""></button>
               </div>
-        </div>
-        <div class="underline">
+        </section>
+        <section class="underline">
             <div class="invite_form ">
                 <h3>Invite Partner</h3>
                 <div class="invite_text">
@@ -139,14 +148,14 @@
                     <button class="accept_button">Invite</button>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="help underline">
+        <section class="help underline">
             <h2>Need Support</h2>
             <p>Discuss with our wedding support team</p>
-        </div>
+        </section>
 
-        <div class="cta_container">
+        <section class="cta_container">
             <div class="box">
                 <h2>Book your Consultant (999/-) Free</h2>
 
@@ -170,14 +179,14 @@
                 <button>Continue</button>
 
             </div>
-        </div>
+        </section>
 
-        <div class="booking">
+        <section class="booking">
             <h2>Want to have your personalized photobook?</h2>
             <div>
                 <button>Book a Photobook</button>
             </div>
-        </div>
+        </section>
 
     </main>
     <footer>
@@ -191,39 +200,6 @@
                 VERSION 5.1.5</p>
         </div>
     </footer>
-
-    <script>
-        const carousel = document.querySelector('.carousel');
-        const prevBtn = document.querySelector('.prev-btn');
-        const nextBtn = document.querySelector('.next-btn');
-        let currentIndex = 1; 
-        carousel.children[1].classList.add('active');
-
-        prevBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + carousel.children.length) % carousel.children.length;
-        updateCarousel();
-        });
-
-        nextBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % carousel.children.length;
-        updateCarousel();
-        });
-
-        function updateCarousel() {
-        const carouselWidth = carousel.children[(currentIndex - 1 + carousel.children.length) % carousel.children.length].offsetWidth;
-        
-        carousel.style.transform = `translateX(${-currentIndex * carouselWidth}px)`;
-        for (let i = 0; i < carousel.children.length; i++) {
-            const item = carousel.children[i];
-            if (i === currentIndex) {
-            item.classList.add('active');
-            } else {
-            item.classList.remove('active');
-            }
-        }
-        }
-
-
-    </script>
+    
 </body>
 </html>
